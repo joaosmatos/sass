@@ -1,0 +1,50 @@
+nav {
+    width: 100%;
+    background: #000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    color: #fff;
+    display: inline-block;
+}
+
+//sass
+
+nav {
+    width: 100%;
+    background: #000;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        color: #fff;
+        display: inline-block;
+    }
+}
+
+// propriedades aninhadas
+
+nav {
+    font: {
+        family: "Times New Roman", Times, Serif;
+        style: italic;
+        size: 30px;
+        weight: bold;
+    }
+}
+
+// pseudo-elements
+
+a {
+    color: rgb(255, 187, 170);
+
+    &:hover {
+        color: #faf;
+    }
+}

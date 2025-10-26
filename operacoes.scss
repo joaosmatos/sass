@@ -1,0 +1,64 @@
+//adiçaõ e multiplicação
+
+h1 {
+    font-size: 2em + 22px; // unidades incopatíveis
+    font-size: 5px + 2; // 7px
+    font-size: 5px * 2px; // unidade inválida
+}
+
+// subtração
+
+h1 {
+    font-size: 5px - 2; // 3px
+}
+
+// divisão
+
+$base-size: 20px;
+$line-height: 22px;
+
+p {
+    font: 10px/8px bold italic serif;
+    $width: 1000px;
+    width: $width/2;
+    width: round(1.5)/2;
+    height: (500px/2);
+    margin-left: 5px + 8px/2px;
+    font: (italic bold 10px/8px);
+    font-size: #{$base-size} /#{$line-height};
+}
+
+// módulo
+
+$font-size: 27px;
+
+p {
+    font-size: $font-size % 2;
+}
+
+// color operations
+
+p {
+    color: #010203 + #040506;
+}
+
+// 01 + 04 = 05, 02 + 05 = 07 e 03 + 06 = 09:
+
+p {
+    color: #050709;
+}
+
+// string 
+
+p {
+    cursor: e + -resize;
+}
+
+p:before {
+    content: "Eu tenho #{2 + 10} moedas";
+}
+
+$value: null;
+p:before {
+    content: "Eu tenho #{$value} moedas.";
+}
