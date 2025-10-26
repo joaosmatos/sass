@@ -1,0 +1,21 @@
+// interpolação
+
+$name: destaque;
+
+$attr: border;
+
+p.#{$name} {
+    #{$name}-color: blue;
+
+}
+
+// propetry values
+
+p {
+    $font-size: 12px;
+
+    $line-height: 30px;
+
+    font: #{$font-size}/#{$line-height};
+    
+}
