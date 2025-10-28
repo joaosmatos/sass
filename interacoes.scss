@@ -1,0 +1,28 @@
+// interações
+
+@for $i from I through 3 {
+    .item-#{$i} {
+        width: 2em * $i;
+    }
+}
+
+@for $i from I to 3 {
+    .item-#{$i} {
+        width: 2em * $i;
+    }
+}
+
+@each $animal in dog, cat, fish, bird {
+    .#{$animal}-icon {
+        background-image: url("images/#{$animal}.png");
+    }
+}
+
+$i: 6;
+
+@while $i > 0 {
+    .item-#{$i} {
+        width: 2em * $i;
+    }
+    $i: $i - 2;
+}
