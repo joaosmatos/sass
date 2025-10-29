@@ -1,0 +1,39 @@
+// media queries
+
+.sidebar {
+    width: 40%;
+    @media screen and (landscape) {
+        width: 30%;
+    }
+}
+
+$tablet-width: 768px;
+$desktop-width: 1022px;
+
+@mixin landscape {
+    @media screen and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+
+    }
+}
+
+header {
+
+    padding: 3em;
+
+    @include tablet {
+        padding: 2em;
+    }
+
+}
