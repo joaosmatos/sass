@@ -1,0 +1,17 @@
+// @import
+
+partials/
+        _base.scss
+        _buttons.scss
+        _figure.scss
+        _grid.scss
+        _typography.scss
+        _reset.scss
+style.scss
+
+@import partials/base.scss
+@import partials/button.scss
+@import partials/figure.scss
+@import partials/grids.scss
+@import partilas/typography.scss
+@import partials/reset.scss
